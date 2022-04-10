@@ -5,9 +5,9 @@ from datetime import timedelta
 from odoo.exceptions import UserError
 from odoo.tools.translate import _
 
-class book_store(models.Model):
-    _name = 'book_store.book'
-    _description = 'book_store.book'
+class BookStore(models.Model):
+    _name = 'book.store.book'
+    _description = 'book.store.book'
     _order = 'date_release desc, name'
     _rec_name = 'short_name'
 
